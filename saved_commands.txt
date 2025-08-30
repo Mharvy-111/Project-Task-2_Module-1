@@ -1,0 +1,55 @@
+  160  # Download Miniconda installer
+  161  wget https://repo.anaconda.com/miniconda/Miniconda3-latest-Linux-x86_64.sh
+  162  # Make installer executable
+  163  chmod +x Miniconda3-latest-Linux-x86_64.sh
+  164  #Run the installer
+  165  bash Miniconda3-latest-Linux-x86_64.sh
+  166  conda --version
+  167  # =========================================
+  168  # Step 1: Activate your base conda environment
+  169  # =========================================
+  170  echo "Activating base conda environment..."
+  171  conda activate base && echo "Base conda environment activated"
+  172  # Step 2: Create a conda environment named funtools
+  173  # =========================================
+  174  echo "Creating environment 'funtools' (with Python 3.11)..."
+  175  conda create -n funtools python=3.11 -y && echo "'funtools' created"
+  176  Step 3: Activate the funtools environment
+  177  # =========================================
+  178  echo "Activating 'funtools' ..."
+  179  conda activate funtools && echo "'funtools' is active"
+  180  conda activate funtools
+  181  # Step 4: Install Figlet using apt-get (or conda if preferred)
+  182  # -------------------------------
+  183  echo "Installing Figlet..."
+  184  sudo apt-get update
+  185  sudo apt-get install figlet -y
+  186  echo "Figlet installation completed"
+  187  # Step 5: Run Figlet to display your name
+  188  # -------------------------------
+  189  echo "Displaying my name with Figlet:"
+  190  figlet "Marvellous Badmus"
+  191  # Step 6: Install bwa through the bioconda channel
+  192  conda install -c bioconda bwa -y
+  193  echo "BWA installed"
+  194  # Step 7: Install blast through the bioconda channel
+  195  conda install -c bioconda blast -y
+  196  echo "BLAST installed"
+  197  # Step 8: Install samtools through the bioconda channel
+  198  conda install -c bioconda samtools -y
+  199  echo "Samtools installed"
+  200  # Step 9: Install bedtools through the bioconda channel
+  201  conda install -c bioconda bedtools -y
+  202  echo "Bedtools installed"
+  203  # Step 10: Install spades.py through the bioconda channel
+  204  conda install -c bioconda spades -y
+  205  echo "SPAdes installed"
+  206  # Step 11: Install bcftools through the bioconda channel
+  207  conda install -c bioconda bcftools -y
+  208  echo "BCFtools installed"
+  209  # Step 12: Install fastp through the bioconda channel
+  210  conda install -c bioconda fastp -y
+  211  echo "Fastp installed"
+  212  # Step 13: Install multiqc through the bioconda channel
+  213  conda install -c bioconda multiqc -y
+  214  echo "MultiQC installed"
